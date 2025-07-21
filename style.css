@@ -1,0 +1,249 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: #2f4156;
+  --white: #ffffff;
+  --light: #f5efeb;
+  --secondary: #567cbd;
+  --primary: #c8d9e6;
+}
+
+.tenor-sans-regular {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Montserrat Font Variants */
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav */
+nav {
+  background: var(--dark);
+  color: var(--primary);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+  color: var(--primary);
+  background: var(--primary);
+  border: none;
+}
+.navbar-toggler:hover {
+  background: var(--white);
+  border: none;
+  color: var(--white);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: var(--primary);
+}
+
+.nav-link:hover {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link a {
+  color: var(--primary) !important;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: var(--primary);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+
+  background: var(--primary);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: padding 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: var(--light);
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  padding: 1.1rem 1.6rem;
+  transition: padding 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+.testimonials {
+  background: #eef;
+  padding: 2rem 1rem;
+}
+
+/* Contact */
+#contact {
+  background: var(--light);
+  padding: 2rem 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#contact .btn {
+  background: var(--dark);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-details .btn {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.project_prof_pic:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.image-container:hover .caption {
+  display: block;
+}
+.caption {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  padding: 0.5rem;
+  text-align: center;
+}
+/* Footer */
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
