@@ -1,1 +1,0 @@
-My interactivity comes through in the images for the website. For the projects page, I had the images increase in size on hover so that it is clear which image you are selecting and it makes the project more prominent. Then on each project page there is a hoverable caption to the photo and it increases in size when hovered over. 
