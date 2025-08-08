@@ -3,7 +3,7 @@
       aria-label="Main navigation"
     >
       <div class="container">
-        <a class="navbar-brand tenor-sans-regular" href="index.html">Bryan Murray</a>
+        <a class="navbar-brand tenor-sans-regular" href="{{ '/' | relative_url}}">Bryan Murray</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -15,10 +15,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link montserrat-regular" href="about.html">About Me</a>
+              <a class="nav-link montserrat-regular" href="{{ '/about/' | relative_url}}">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link montserrat-regular" href="projects.html">Projects</a>
+              <a class="nav-link montserrat-regular" href="{{ '/projects/' | relative_url}}">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link montserrat-regular" href="#contact">Contact</a>
